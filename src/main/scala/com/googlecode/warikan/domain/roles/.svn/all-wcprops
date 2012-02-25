@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/74/trunk/warikan/src/main/scala/com/googlecode/warikan/domain/roles
+END
+PieMaker.scala
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/74/trunk/warikan/src/main/scala/com/googlecode/warikan/domain/roles/PieMaker.scala
+END
+Accountant.scala
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/74/trunk/warikan/src/main/scala/com/googlecode/warikan/domain/roles/Accountant.scala
+END
+Planner.scala
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/74/trunk/warikan/src/main/scala/com/googlecode/warikan/domain/roles/Planner.scala
+END
+Administrator.scala
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/74/trunk/warikan/src/main/scala/com/googlecode/warikan/domain/roles/Administrator.scala
+END
+Organizer.scala
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/74/trunk/warikan/src/main/scala/com/googlecode/warikan/domain/roles/Organizer.scala
+END
+Payer.scala
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/74/trunk/warikan/src/main/scala/com/googlecode/warikan/domain/roles/Payer.scala
+END

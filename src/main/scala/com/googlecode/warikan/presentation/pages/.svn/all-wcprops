@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/84/trunk/warikan/src/main/scala/com/googlecode/warikan/presentation/pages
+END
+TopPage.scala
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/84/trunk/warikan/src/main/scala/com/googlecode/warikan/presentation/pages/TopPage.scala
+END
+SlopeDetailPage.scala
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/84/trunk/warikan/src/main/scala/com/googlecode/warikan/presentation/pages/SlopeDetailPage.scala
+END
+PlanningPage.scala
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/84/trunk/warikan/src/main/scala/com/googlecode/warikan/presentation/pages/PlanningPage.scala
+END
+PayingPage.scala
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/84/trunk/warikan/src/main/scala/com/googlecode/warikan/presentation/pages/PayingPage.scala
+END
+AccountingPage.scala
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/84/trunk/warikan/src/main/scala/com/googlecode/warikan/presentation/pages/AccountingPage.scala
+END
+SlopeListPage.scala
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/84/trunk/warikan/src/main/scala/com/googlecode/warikan/presentation/pages/SlopeListPage.scala
+END

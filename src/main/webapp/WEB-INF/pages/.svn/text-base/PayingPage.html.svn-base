@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Paying</title>
+    <link href="css/warikan-main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="page">
+    <!-- Header -->
+    <div id="header">
+        <div id="header_title">Warikan Application</div>
+    </div>
+    
+    <!-- Content -->
+    <div id="content">
+        <div id="content_title">Paying</div>
+
+        <form wicket:id="main" method="post">
+            <table class="detail">
+                <tr><th>Sum</th><td><input type="text" wicket:id="sum" /></td></tr>
+            </table>
+        
+            <div class="information">Party Detail</div>
+            <table class="detail">
+                <tr><th>Name</th><td wicket:id="partyName"></td></tr>
+                <tr><th>Schedule</th><td wicket:id="schedule"></td></tr>
+                <tr><th>Location</th><td wicket:id="location"></td></tr>
+            </table>
+            
+            <div class="button_line">
+                <input type="submit" wicket:id="cancelButton" value="Cancel" />
+                <input type="submit" wicket:id="commitButton" value="Commit" />
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

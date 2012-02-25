@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Planning Party</title>
+    <link href="css/warikan-main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="page">
+    <!-- Header -->
+    <div id="header">
+        <div id="header_title">Warikan Application</div>
+    </div>
+    
+    <!-- Content -->
+    <div id="content">
+        <div id="content_title">Party Plan</div>
+
+        <form wicket:id="main" method="post">
+        
+            <table class="detail">
+                <tr><th>Name</th><td><input type="text" wicket:id="partyName" /></td></tr>
+                <tr><th>Schedule</th><td><input type="text" wicket:id="schedule" />(yyyy/mm/dd)</td></tr>
+                <tr><th>Location</th><td><input type="text" wicket:id="location" /></td></tr>
+            </table>
+            
+            <div class="information">Participants</div>
+            <table class="list">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+                <tr wicket:id="participants">
+                    <td><input type="text" wicket:id="name" /></td>
+                    <td>
+                        <select wicket:id="role">
+                            <option>Chief</option>
+                            <option>Manager</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" wicket:id="newLineButton" value="New Line" /><br />
+            
+            <div class="button_line">
+                <input type="submit" wicket:id="cancelButton" value="Cancel" />
+                <input type="submit" wicket:id="commitButton" value="Commit" />
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

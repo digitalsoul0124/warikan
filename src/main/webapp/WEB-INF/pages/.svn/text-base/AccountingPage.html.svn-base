@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Accounting</title>
+    <link href="css/warikan-main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="page">
+    <!-- Header -->
+    <div id="header">
+        <div id="header_title">Warikan Application</div>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <form wicket:id="main" method="post">
+            <div id="content_title">Accounting</div>
+
+            <div class="information">Party Detail</div>
+            <table class="detail">
+                <tr><th>Name</th><td wicket:id="partyName">Birthday</td></tr>
+                <tr><th>Schedule</th><td wicket:id="schedule">2010/06/06</td></tr>
+                <tr><th>Location</th><td wicket:id="location">Cafe</td></tr>
+                <tr><th>Sum</th><td wicket:id="sum">10000</td></tr>
+            </table>
+            
+            <div class="button_line">
+                <select wicket:id="selectedSlope">
+                    <option>Slope 1</option>
+                    <option>Slope 2</option>
+                </select>
+                <input type="submit" wicket:id="calculateButton" value="calculate" />
+            </div>
+
+            <div class="information">Payments</div>
+            <table class="list">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Payment</th>
+                </tr>
+                <tr wicket:id="payments">
+                    <td wicket:id="name">Jack</td>
+                    <td wicket:id="role">Manager</td>
+                    <td wicket:id="payment">1000</td>
+                </tr>
+            </table>
+            
+            <div class="button_line">
+                <input type="submit" wicket:id="backButton" value="Back" />
+                <input type="submit" wicket:id="commitButton" value="Commit" />
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

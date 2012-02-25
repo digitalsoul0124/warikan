@@ -1,0 +1,15 @@
+    <!-- Warikan -->
+    <Keyspace Name="warikan">
+    
+        <ColumnFamily CompareWith="LongType" Name="Role" />
+        <ColumnFamily CompareWith="UTF8Type" Name="Slope" />
+        <ColumnFamily CompareWith="UTF8Type" Name="Weight" CompareSubcolumnsWith="UTF8Type" ColumnType="Super" />
+        <ColumnFamily CompareWith="UTF8Type" Name="Party" />
+        <ColumnFamily CompareWith="UTF8Type" Name="Participant" CompareSubcolumnsWith="UTF8Type" ColumnType="Super" />
+        <ColumnFamily CompareWith="UTF8Type" Name="Allot" CompareSubcolumnsWith="UTF8Type" ColumnType="Super" />
+        
+        <ReplicaPlacementStrategy>org.apache.cassandra.locator.RackUnawareStrategy</ReplicaPlacementStrategy>
+        <ReplicationFactor>1</ReplicationFactor>
+        <EndPointSnitch>org.apache.cassandra.locator.EndPointSnitch</EndPointSnitch>
+        
+    </Keyspace>

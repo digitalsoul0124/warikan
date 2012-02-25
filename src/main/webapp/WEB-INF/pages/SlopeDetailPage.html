@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Slope Detail</title>
+    <link href="css/warikan-main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="page">
+
+    <!-- Header -->
+    <div id="header">
+        <div id="header_title">Warikan Application</div>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <div id="content_title">Slope Detail</div>
+
+        <form wicket:id="main" method="post">
+            <table class="detail">
+                <tr>
+                    <th>name</th><td><input type="text" wicket:id="slopeName" /></td>
+                </tr>
+            </table>
+            
+            <div class="information">Weights</div>
+            <table class="list">
+                <tr>
+                    <th>role</th>
+                    <th>weight</th>
+                </tr>
+                <tr wicket:id="weights">
+                    <td>
+                        <select wicket:id="role">
+                            <option>Chief</option>
+                            <option>Manager</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select wicket:id="weight">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" wicket:id="newLineButton" value="New Line" />
+
+            <div class="button_line">
+                <input type="submit" wicket:id="cancelButton" value="Cancel" />
+                <input type="submit" wicket:id="commitButton" value="Commit" />
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+package jp.ne.hatena.d.digitalsoul.warikan.contexts
+
+import org.junit._
+import Assert._
+
+import jp.ne.hatena.d.digitalsoul.warikan.contexts._
+import jp.ne.hatena.d.digitalsoul.warikan.models._
+import jp.ne.hatena.d.digitalsoul.warikan.repositories._
+
+import jp.ne.hatena.d.digitalsoul.warikan.mocks._
+
+class EditSlopeTest extends InjectorInitializer {
+	
+	@Before
+	def setup = {
+		PartyRepository.repository.asInstanceOf[MockPartyRepositoryImpl].initialize
+		SlopeRepository.repository.asInstanceOf[MockSlopeRepositoryImpl].initialize
+	}
+	
+	@Test
+	def shouldExecuteDeleteSlope = {
+
+		// id
+		val slopeId:String = 1.toString
+		
+		// Preparation
+		val slope:Slope = new Slope(slopeId)
+		slope.put( "Chief" -> 10 )
+		slope.put( "Novice" -> 5 )
+		SlopeRepository.add(slope)
+		
+		// execute delete
+		val editSlope:EditSlope = new EditSlope(slopeId)
+		editSlope.delete
+		
+		// verify
+		assertTrue(SlopeRepository.forSlopeId(slopeId).isEmpty)
+		
+	}
+}
